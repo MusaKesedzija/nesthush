@@ -25,8 +25,10 @@
           .container {
             max-width: 500px;
             padding: 30px;
-            backdrop-filter: blur(4px);
-          }
+            backdrop-filter: blur(8px);
+            background: rgba(255,255,255,0.2);
+            border-radius: 12px;
+            }
 
           h1 {
             font-size: 42px;
@@ -57,19 +59,21 @@
             font-size: 14px;
           }
 
-          button {
-            padding: 12px 20px;
-            border: none;
-            border-radius: 6px;
-            background: #3b82f6;
-            color: white;
-            font-size: 14px;
-            cursor: pointer;
-          }
-
-          button:hover {
-            background: #2563eb;
-          }
+            button {
+              padding: 12px 20px;
+              border: none;
+              border-radius: 8px;
+              background: linear-gradient(135deg, #3b82f6, #2563eb);
+              color: white;
+              font-size: 14px;
+              cursor: pointer;
+              transition: all 0.2s ease;
+            }
+            
+            button:hover {
+              transform: translateY(-1px);
+              box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+            }
 
           .footer {
             margin-top: 40px;
@@ -82,7 +86,7 @@
         <div class="container">
           <h1>nesthush</h1>
           <div class="accent"></div>
-          <p>Sleep like a family. Coming soon!!!</p>
+          <p>Sleep like family. Coming soon.</p>
 
           <div>
             <input placeholder="Enter your email" />
@@ -91,7 +95,7 @@
           </div>
 
           <div class="footer">
-            "©" 2026 nesthush
+            © 2026 nesthush
           </div>
         </div>
       </body>
